@@ -4,8 +4,8 @@ To run the Project:
 uvicorn main:app --reload
 
 
-#These are my Notes for Reference to Follow steps to create  project
-FOR dependency use requirements.txt
+# These are my Notes for Reference to Follow steps to create  project:
+For dependency use requirements.txt
 pip install -r requirements.txt
 
 create virtual env:
