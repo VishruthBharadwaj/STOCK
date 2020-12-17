@@ -18,12 +18,13 @@ app.get("/") means get request defined below which returns json
 
 Using POSTMAN for request
 http://127.0.0.1:8000/stock
-KEY IS symbol VALUE is VB(anything)
+KEY is "symbol" VALUE is "VB"(anything)
 
 
-Create folder templatee
-layout.html
-dashboard.html
+Create folder template
+Inside Folder
+1)layout.html
+2)dashboard.html
 
 
 home.html will extend layout.html
@@ -54,14 +55,14 @@ now button for filter change to primary(for blue colour)
 
 Now structure of DB
 I have used SQLalchemy
-go to SQL( relational) db in fastapi docs
+Go to SQL( relational) db in fastapi docs
 
 database.py
 sqlalchemy copy paste stocks.db
 
 
 copy models of SQL Alchemy
-create models.py and paste thr
+create models.py and paste there
 modify accordingly 
 now search in docs create_all 
 copy paste that in starting of main.py...need to import engine,models i.e from models.py
@@ -74,9 +75,9 @@ select * from stocks;
 insert into stocks (symbol) values('AAPL')
 check using select * from stocks;
 
-now take all component and wirethem together
+Now take all component and wirethem together
 1)Pyndantic-To define structure of http request
-2) Dependency injection
+2)Dependency injection
 3)background task to fetch data
 
 we want user to give stock symbol and get data
@@ -121,4 +122,4 @@ USE Async infront of Function WITH BACKGROUND TASK
 For real data have yfinance import it..
 modify accordingly inside function
 
-we will get all data from yfinance
+we will get all data from yfinance(Yahoo finance Data)
